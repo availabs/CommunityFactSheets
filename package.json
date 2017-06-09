@@ -1,0 +1,29 @@
+{
+  "name": "Community-Fact-Sheets",
+  "private": true,
+  "version": "0.0.1",
+  "description": "It displays some census data",
+  "dependencies": {
+    "d3": "^4.9.1",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-redux": "^5.0.5",
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-react": "^6.24.1",
+    "express": "^4.15.3",
+    "webpack": "^2.6.1",
+    "webpack-dev-middleware": "^1.10.2"
+  },
+  "scripts": {
+    "build": "./build.sh",
+    "start": "node app.js",
+    "debug": "node debug app.js"
+  },
+  "main": "app.js",
+  "author": "Eric Conklin"
+}

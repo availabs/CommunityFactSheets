@@ -1,0 +1,226 @@
+/* BOOTSTRAP OVERRIDES */
+
+.table.table-sm {
+	font-size: 0.75rem;
+}
+
+/* HELPERS CLASSES */
+
+.interactive {
+	cursor: pointer;
+}
+
+.content-container {
+	padding-top: 69px;
+	padding-left: 69px;
+}
+.content-container > .row {
+	margin-left: 0px;
+}
+
+.align-right {
+	text-align: right;
+}
+
+/* GRAPH STUFF */
+
+svg g.graph-area rect.graph-rect {
+	fill-opacity: 0.75;
+}
+svg g.graph-area rect.graph-rect:hover {
+	fill-opacity: 1.0;
+}
+
+.axis path,
+.axis .tick {
+	stroke-width: 2px;
+}
+
+/* POPUP STUFF */
+
+table.popup {
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.75);
+	padding: 8px 12px;
+	border-radius: 4px;
+	color: #fff;
+	padding: 8px 12px;
+	border: 0;
+}
+table.popup.hide {
+	display: none;
+}
+table.popup.show {
+	display: block;
+}
+table.popup tr {
+	padding: 0;
+	border: 0;
+}
+table.popup tr.popup-header {
+	font-weight: bold;
+	font-size: 0.9rem;
+}
+table.popup tr:nth-child(even) {
+	background-color: #555;
+}
+table.popup td {
+	padding: 0px 8px;
+	border: 0;
+	text-align: right;
+}
+table.popup td:first-child {
+	text-align: left;
+}
+
+/* HEADER CLASSES */
+
+.cfs-navbar {
+	padding: 8px 15px 8px 15px;
+	background-color: #222;
+	position: fixed;
+	width: 100%;
+	margin: 0px;
+	z-index: 100;
+}
+.cfs-navbar .loading-indicator {
+	width: 50px;
+	text-align: center;
+}
+.cfs-navbar nav.cfs-navbar-nav {
+	display: inline-block;
+	padding: 2px 20px;
+}
+.cfs-navbar nav.cfs-navbar-nav a.cfs-nav-link {
+	color: #fff;
+	transition: all .2s ease-in-out;
+	display: inline-block;
+	padding: 5px 15px;
+	border-radius: 4px;
+	margin: 0px 5px;
+}
+.cfs-navbar nav.cfs-navbar-nav a.cfs-nav-link:hover,
+.cfs-navbar nav.cfs-navbar-nav a.cfs-nav-link.active {
+	background-color: #555;
+}
+.cfs-navbar nav.cfs-navbar-nav a.cfs-nav-link.active:hover {
+	cursor: default;
+}
+.selected-place {
+	margin: 0px;
+	padding: 0.25rem 3rem;
+	border-radius: 4px;
+	background-color: #fff;
+	color: #222;
+}
+
+/* SIDEBAR CLASSES */
+
+.sidebar {
+	width: 54px;
+	padding-top: 54px;
+	height: 100%;
+	left: 0px;
+	position: fixed;
+	transition: all .2s ease-in-out;
+	white-space: nowrap;
+	z-index: 50;
+	background-color: #222;
+}
+.sidebar.open {
+	background-color: #333;
+}
+.sidebar .sidebar-div1 {
+	height: 100%;
+	padding-top: 15px;
+	padding-bottom: 69px;
+	transition: all .2s ease-in-out;
+	background-color: #222;
+	position: fixed;
+	width: 0px;
+	left: 54px;
+	overflow-x: hidden;
+}
+.sidebar .sidebar-div2 {
+	height: 100%;
+	padding-top: 15px;
+	padding-bottom: 69px;
+	transition: all .2s ease-in-out;
+	background-color: #444;
+	position: fixed;
+	width: 0px;
+	left: 54px;
+	overflow-x: hidden;
+}
+.sidebar .sidebar-div3 {
+	height: 100%;
+	padding-top: 15px;
+	padding-bottom: 69px;
+	transition: all .2s ease-in-out;
+	background-color: #555;
+	position: fixed;
+	width: 0px;
+	left: 54px;
+	overflow-x: hidden;
+}
+.sidebar.open .sidebar-div1 {
+	background-color: #444;
+	width: 250px;
+}
+.sidebar.open .sidebar-div2 {
+	left: 304px;
+}
+.sidebar.open .sidebar-div3 {
+	left: 304px;
+}
+.sidebar.open.double-wide .sidebar-div2,
+.sidebar.open.triple-wide .sidebar-div2 {
+	background-color: #555;
+	width: 250px;
+}
+.sidebar.open.double-wide .sidebar-div3,
+.sidebar.open.triple-wide .sidebar-div3 {
+	left: 554px;
+}
+.sidebar.open.double-wide.triple-wide .sidebar-div3,
+.sidebar.open.triple-wide .sidebar-div3 {
+	background-color: #666;
+	width: 250px;
+}
+.sidebar .sidebar-div2 .fa-chevron-right {
+	padding-top: 4px;
+	margin-right: 15px;
+}
+.sidebar span.sidebar-control {
+	transition: all .2s ease-in-out;
+	position: absolute;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.sidebar span.sidebar-control.sidebar-open {
+	padding: 6px 4px 3px 4px;
+	left: 12px;
+	top: 66px;
+}
+.sidebar span.sidebar-control.sidebar-reset {
+	padding: 2px 4px 2px 4px;
+	left: 12px;
+	top: 119px;
+}
+.sidebar span.sidebar-control:hover {
+	background-color: #555;
+}
+.sidebar .sidebar-item {
+	padding: 3px 0px 3px 15px;
+}
+.sidebar .sidebar-div1 .sidebar-item:hover,
+.sidebar .sidebar-div1 .sidebar-item.active {
+	background-color: #555;
+}
+.sidebar .sidebar-div2 .sidebar-item:hover,
+.sidebar .sidebar-div2 .sidebar-item.active {
+	background-color: #666;
+}
+.sidebar .sidebar-div3 .sidebar-item:hover {
+	background-color: #777;
+}
